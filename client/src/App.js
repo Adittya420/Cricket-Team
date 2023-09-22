@@ -1,8 +1,9 @@
 import "./App.css";
 import AppNavbar from "./components/AppNavBar";
-import Addusers from "./components/AddUser";
+// Remove the import for startUp
+// import startUp from "./components/StartUp";
+import Addusers from "./components/AddUser1";
 import Allusers from "./components/AllUsers";
-import NewHome from "./components/NewHome"; // Adjust the path if necessary
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -11,7 +12,8 @@ function App() {
     <BrowserRouter>
       <AppNavbar />
       <Routes>
-        <Route path="/" element={<NewHome />} />
+        {/* No need to use startUp */}
+        <Route path="/" element={<div>Home</div>} />
         <Route path="/add" element={<Addusers />} />
         <Route path="/all" element={<Allusers />} />
       </Routes>

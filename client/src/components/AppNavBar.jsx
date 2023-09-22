@@ -15,7 +15,7 @@ const AppNavbar = () => {
   return (
     <Header position="static">
       <Toolbar>
-        <Tabs to="/home">Home</Tabs>
+        <Tabs to="/">Home</Tabs>
         <Tabs to="/all">All Users</Tabs>
         <Tabs to="/add">Add Users</Tabs>
       </Toolbar>
