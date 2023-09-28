@@ -10,6 +10,8 @@ import {
 
 import { addUser } from "../service/api";
 
+import { useNavigate } from "react-router-dom";
+
 import { useState } from "react";
 const Container = styled(FormGroup)`
   width: 50%;
@@ -29,12 +31,15 @@ const DefaultValue = {
 const Addusers = () => {
   const [user, setUser] = useState(DefaultValue);
 
+  const navigate = useNavigate();
+
   const onValueChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
   const AddUserDetails = async () => {
     await addUser(user);
+    navigate("/all");
   };
 
   return (

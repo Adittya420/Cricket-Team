@@ -1,5 +1,5 @@
-const startUP = () => {
+const StartUp = () => {
   return <p>START POINT</p>;
 };
 
-export default startUP;
+export default StartUp;

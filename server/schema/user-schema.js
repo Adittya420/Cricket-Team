@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 // import { promisify } from "util";
 
 const userSchema = mongoose.Schema({
+  id: String,
   name: String,
   username: String,
   email: String,

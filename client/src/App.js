@@ -4,6 +4,7 @@ import AppNavbar from "./components/AppNavBar";
 // import startUp from "./components/StartUp";
 import Addusers from "./components/AddUser1";
 import Allusers from "./components/AllUsers";
+import EditUser from "./components/EditUser";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<div>Home</div>} />
         <Route path="/add" element={<Addusers />} />
         <Route path="/all" element={<Allusers />} />
+        <Route path="/edit/:id" element={<EditUser />} />
       </Routes>
     </BrowserRouter>
   );
